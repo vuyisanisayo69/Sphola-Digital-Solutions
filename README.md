@@ -1,2 +1,12 @@
-# Sphola-Digital-Solutions
-Sphola Digital Solutions is a Digital Solutions &amp; IT Services company combining creative design with smart technology. We design brands, build websites, and repair and maintain computers, laptops and mobile devices, all under one roof. Most repairs are resolved within 1–3 business days, and every device leaves our workshop in excellent condition. 
+# Sphola Digital Solutions website
+
+Static site: `index.html` plus the `assets/` folder. No build step.
+
+## Deploy on Cloudflare Pages
+1. Push these files to a GitHub repo (keep `index.html` and `assets/` in the repo root).
+2. Cloudflare dashboard > Workers & Pages > Create > Pages > Connect to Git, then choose the repo.
+3. Build command: leave empty. Build output directory: leave empty (or `/`). Save and Deploy.
+4. In the project, open Custom domains > Set up a custom domain, and add your domain.
+
+## Editing
+Open `index.html`. Text, services and contact details are plain HTML. Images live in `assets/`.

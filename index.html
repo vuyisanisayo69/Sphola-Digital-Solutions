@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sphola Digital Solutions | Creative Design. Smart Technology.</title>
+<meta name="description" content="Graphic design, web design, computer and laptop repairs and IT support from one Cape Town team.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@400;500;600;700&display=swap">
+<style>
+:root{--bg:#fff;--alt:#F3F5F7;--ink:#16212B;--muted:#4A5661;--line:#DCE2E7;--card:#fff;--acc:#F26A1B;--acct:#BF4F0A;--dark:#0B1118;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E151C;--alt:#131C25;--ink:#EEF2F5;--muted:#A9B5BF;--line:#26323D;--card:#17212B;--acct:#FF8A3D;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E151C;--alt:#131C25;--ink:#EEF2F5;--muted:#A9B5BF;--line:#26323D;--card:#17212B;--acct:#FF8A3D;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.7 Montserrat,system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--dark);z-index:30}
+h1,h2,h3{font-family:'Archivo Black',Impact,sans-serif;font-weight:400;line-height:1.12;margin:0}
+a{color:inherit}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--dark)}
+.bar{max-width:1180px;margin:auto;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px 28px;flex-wrap:wrap}
+.bar img{height:46px;width:auto;display:block}
+nav{display:flex;gap:2px 22px;flex-wrap:wrap}
+nav a{color:#E6EBEF;text-decoration:none;font-size:13px;font-weight:600;padding:6px 0}
+nav a:hover{color:#FF8A3D}
+@media(max-width:820px){nav{width:100%;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;padding-bottom:4px}}
+.hero{position:relative;overflow:hidden;background:var(--dark);color:#fff;text-align:center;padding:72px 20px 92px}
+.glow{position:absolute;left:50%;top:50%;width:760px;max-width:140%;transform:translate(-50%,-50%);filter:blur(42px);opacity:.5;pointer-events:none}
+.hero>*:not(.glow){position:relative}
+.hero .logo{width:min(430px,82%);display:block;margin:0 auto 30px}
+.hero h1{font-size:clamp(30px,6vw,58px);letter-spacing:.01em}
+.hero h1 span{color:#FF8A3D}
+.hero .sub{color:#C9D2D9;font-weight:500;margin:18px auto 0;max-width:640px}
+.btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-block;padding:13px 26px;border-radius:999px;font-weight:700;font-size:14px;letter-spacing:.04em;text-decoration:none;border:2px solid #fff;color:#fff}
+.btn.p{background:var(--acc);border-color:var(--acc);color:#0B1118}
+.btn:hover{filter:brightness(1.1)}
+.sec{padding:76px 20px}
+.sec.alt{background:var(--alt)}
+.wrap{max-width:1100px;margin:auto}
+.eye{font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--acct);margin:0 0 10px}
+h2{font-size:clamp(26px,4vw,40px);margin-bottom:16px}
+.lead{color:var(--muted);max-width:660px;margin:0 0 30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;text-decoration:none;display:block}
+.card h3{font-size:19px;margin-bottom:8px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.card:hover{border-color:var(--acc)}
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+@media(max-width:820px){.split{grid-template-columns:1fr;gap:28px}}
+.chips{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.chips li{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:8px 16px;font-size:14px;font-weight:600}
+.ticks{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.ticks li{padding-left:28px;position:relative}
+.ticks li::before{content:"";position:absolute;left:0;top:.55em;width:12px;height:12px;border-radius:3px;background:var(--acc);transform:rotate(45deg)}
+.work{width:100%;border-radius:14px;border:1px solid var(--line);display:block}
+.cap{font-size:13px;color:var(--muted);margin:8px 0 0}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px}
+summary{cursor:pointer;font-weight:700}
+details p{margin:10px 0 0;color:var(--muted)}
+.fnd{display:grid;grid-template-columns:260px 1fr;gap:44px;align-items:center}
+@media(max-width:820px){.fnd{grid-template-columns:1fr;text-align:center}.fnd .photo{margin:auto}}
+.photo{width:240px;height:240px;border-radius:50%;object-fit:cover;border:5px solid var(--acc);display:block}
+blockquote{margin:0 0 18px;font-size:19px;font-weight:600;line-height:1.5}
+.fnd p{color:var(--muted);margin:0 0 14px}
+.creds{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+@media(max-width:820px){.creds{justify-content:center}}
+.creds span{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 14px;font-size:13px;font-weight:600}
+form{display:grid;gap:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:560px){.two{grid-template-columns:1fr}}
+label{font-size:13px;font-weight:700;display:grid;gap:6px}
+input,textarea{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;width:100%}
+textarea{min-height:130px;resize:vertical}
+button.btn{cursor:pointer;background:var(--acc);border-color:var(--acc);color:#0B1118;justify-self:start}
+.ways{display:grid;gap:14px;align-content:start}
+.ways a{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;text-decoration:none;font-weight:700}
+.ways small{display:block;font-weight:500;color:var(--muted)}
+.ways a:hover{border-color:var(--acc)}
+footer{background:var(--dark);color:#C9D2D9;text-align:center;padding:40px 20px;font-size:14px}
+footer img{height:50px;display:block;margin:0 auto 14px}
+footer p{margin:4px 0}
+#net{position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:15}
+.themed{position:relative;overflow:hidden;background:#0B1118;color:#fff}
+.themed .bgimg{position:absolute;inset:-6px;width:calc(100% + 12px);height:calc(100% + 12px);max-width:none;object-fit:cover;filter:blur(1px);opacity:.92;pointer-events:none}
+.themed .veil{position:absolute;inset:0;background:var(--veil)}
+.themed .wrap{position:relative;z-index:1}
+.themed .split>*{background:rgba(8,13,19,.95);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:28px}
+.themed h2{color:#fff}.themed .lead{color:#DCE3E9}.themed .eye{color:#FFB27A}
+.themed .ticks li{color:#fff}
+.themed .chips li{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.3);color:#fff}
+.themed .cap{color:#C9D2D9}.themed .work{border-color:rgba(255,255,255,.3)}
+.t-design{--veil:linear-gradient(135deg,rgba(34,49,63,.42),rgba(74,38,20,.30))}
+.t-web{--veil:linear-gradient(135deg,rgba(12,10,6,.38),rgba(84,54,6,.26))}
+.t-rest{--veil:linear-gradient(135deg,rgba(10,22,32,.34),rgba(16,72,52,.26))}
+.t-support{--veil:linear-gradient(135deg,rgba(10,14,40,.55),rgba(46,28,104,.45))}
+.pk{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px;align-items:stretch}
+.pkc{background:#0F1A24;color:#fff;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;border:2px solid transparent}
+.pkc.sel{border-color:var(--acc)}
+.pkc h3{background:var(--acc);color:#0B1118;padding:14px 18px;font-size:16px;letter-spacing:.05em;text-transform:uppercase}
+.price{font-family:'Archivo Black',Impact,sans-serif;font-size:46px;padding:18px 18px 2px;text-align:center}
+.pl,.inc{list-style:none;margin:0;padding:8px 12px;flex:1}
+.inc{padding:8px 18px 14px;text-align:center}
+.inc li{padding:11px 0;border-bottom:1px solid rgba(255,255,255,.14);font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:14px}
+.it{display:flex;justify-content:space-between;gap:12px;width:100%;background:transparent;color:#fff;border:0;border-bottom:1px solid rgba(255,255,255,.14);padding:11px 8px;font:600 15px Montserrat,system-ui,sans-serif;cursor:pointer;text-align:left;border-radius:8px}
+.it b{color:#FFB27A}
+.it:hover{background:rgba(255,255,255,.08)}
+.it.on{background:rgba(242,106,27,.28);box-shadow:inset 0 0 0 2px var(--acc)}
+.pkf{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 18px;background:#0A121A;font-size:13px;font-weight:700}
+.pkf .btn{padding:10px 18px;font-size:13px;cursor:pointer}
+.pkf .btn:disabled{opacity:.45;cursor:not-allowed}
+</style>
+</head>
+<body>
+<canvas id="net" aria-hidden="true"></canvas>
+<header><div class="bar">
+<a href="#home" aria-label="Sphola home"><img src="assets/logo.webp" alt="Sphola logo"></a>
+<nav aria-label="Main"><a href="#home">Home</a><a href="#design">Design Studio</a><a href="#packages">Packages</a><a href="#web">Web Design</a><a href="#restoration">Computer Restoration</a><a href="#support">IT Support</a><a href="#faq">FAQ</a><a href="#founder">The Founder</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<section class="hero" id="home">
+<img class="glow" src="assets/glow.webp" alt="" aria-hidden="true">
+<img class="logo" src="assets/logo.webp" alt="Sphola">
+<h1>CREATIVE DESIGN. <span>SMART TECHNOLOGY.</span></h1>
+<p class="sub">Graphic Design • Web Design • Computer &amp; Laptop Repairs • IT Support. One trusted team for your brand, your website and your technology.</p>
+<div class="btns"><a class="btn p" href="#contact">Get a Quote</a><a class="btn" href="#design">Our Services</a></div>
+</section>
+
+<section class="sec"><div class="wrap">
+<p class="eye">What we do</p><h2>Everything your business needs, under one roof</h2>
+<p class="lead">Work with Sphola Digital Solutions once and get design, web and IT handled by the same dependable team.</p>
+<div class="grid">
+<a class="card" href="#design"><h3>Design Studio</h3><p>Logos, flyers, adverts, business cards and social media content.</p></a>
+<a class="card" href="#web"><h3>Web Design</h3><p>Professional websites that present your business clearly.</p></a>
+<a class="card" href="#restoration"><h3>Computer Restoration</h3><p>Repairs, upgrades and maintenance for desktops, laptops and mobiles.</p></a>
+<a class="card" href="#support"><h3>IT Support</h3><p>Network, connectivity and everyday technical support.</p></a>
+</div></div></section>
+
+<section class="sec themed t-design" id="design"><img class="bgimg" src="assets/bg-design.webp" alt="" aria-hidden="true"><div class="veil"></div><div class="wrap split">
+<div><p class="eye">Design Studio</p><h2>Creative Graphic Designs</h2>
+<p class="lead">Established in 2022, our design studio is the best solution for growing your business, from your first logo to your next campaign.</p>
+<ul class="chips"><li>Flyer Design</li><li>Logo Design</li><li>Business Cards</li><li>Invitation Cards</li><li>Advert Design</li><li>Calendar Design</li><li>Social Media</li><li>Music Covers</li><li>Professional Websites</li></ul></div>
+<div><img class="work" src="assets/poster.webp" alt="Creative Graphic Designs advert poster"><p class="cap">Sample work: advert design for Creative Graphic Designs.</p></div>
+</div></section>
+
+<section class="sec alt" id="packages"><div class="wrap"><p class="eye">Packages</p><h2>Package selection</h2><p class="lead">Clear prices so you know what to expect. Choose a package, or tap the designs you need, and we will draft your request for you.</p><div class="pk"><div class="pkc"><h3>Standard Design</h3><ul class="pl"><li><button type="button" class="it" data-n="Poster" data-p="250" aria-pressed="false"><span>Poster</span><b>R250</b></button></li><li><button type="button" class="it" data-n="Poster with images" data-p="300" aria-pressed="false"><span>Poster with images</span><b>R300</b></button></li><li><button type="button" class="it" data-n="Logo" data-p="400" aria-pressed="false"><span>Logo</span><b>R400</b></button></li><li><button type="button" class="it" data-n="Banner" data-p="300" aria-pressed="false"><span>Banner</span><b>R300</b></button></li><li><button type="button" class="it" data-n="Flyer" data-p="300" aria-pressed="false"><span>Flyer</span><b>R300</b></button></li><li><button type="button" class="it" data-n="Social media kit" data-p="450" aria-pressed="false"><span>Social media kit</span><b>R450</b></button></li><li><button type="button" class="it" data-n="Press kit" data-p="250" aria-pressed="false"><span>Press kit</span><b>R250</b></button></li><li><button type="button" class="it" data-n="Product label" data-p="500" aria-pressed="false"><span>Product label</span><b>R500</b></button></li></ul><div class="pkf"><span>Selected: <b id="tot">R0</b></span><button type="button" class="btn p" id="rq" disabled>Request quote</button></div></div><div class="pkc" data-pk="Business Standard"><h3>Business Standard</h3><div class="price">R1500</div><ul class="inc"><li>Logo</li><li>Business Card</li><li>Letterhead</li><li>Invoice Design</li></ul><div class="pkf"><span>Corporate Identity</span><button type="button" class="btn p pb" data-name="Business Standard" data-price="R1500" data-inc="Logo, Business Card, Letterhead, Invoice Design">Choose package</button></div></div><div class="pkc" data-pk="Premium Business"><h3>Premium Business</h3><div class="price">R3000</div><ul class="inc"><li>Logo</li><li>Business Card</li><li>Letterhead</li><li>Invoice Design</li><li>Email Signature</li><li>Website Domain</li></ul><div class="pkf"><span>Corporate Identity</span><button type="button" class="btn p pb" data-name="Premium Business" data-price="R3000" data-inc="Logo, Business Card, Letterhead, Invoice Design, Email Signature, Website Domain">Choose package</button></div></div></div><p class="cap" style="text-align:center;margin-top:24px">Designs are delivered from 1 day. Talk to us on <a href="https://wa.me/27682760271">WhatsApp</a> for a free quote.</p></div></section>
+<section class="sec themed t-web" id="web"><img class="bgimg" src="assets/bg-web.webp" alt="" aria-hidden="true"><div class="veil"></div><div class="wrap split">
+<div><p class="eye">Web Design</p><h2>Websites that work as hard as you do</h2>
+<p class="lead">A professional website is your business open around the clock. We design clean, modern, mobile-friendly sites that match your brand and are easy to keep up to date.</p></div>
+<ul class="ticks"><li>Professional business websites</li><li>Branding that carries through from logo to website</li><li>Layouts that work on phones, tablets and computers</li><li>Contact forms and clear calls to action</li></ul>
+</div></section>
+
+<section class="sec themed t-rest" id="restoration"><img class="bgimg" src="assets/bg-restoration.webp" alt="" aria-hidden="true"><div class="veil"></div><div class="wrap split">
+<div><p class="eye">Computer Restoration</p><h2>The Mission</h2>
+<p class="lead">We provide computer repair, maintenance, upgrade and troubleshooting services for desktops, laptops and mobile devices. Every device leaves our workshop in excellent condition.</p></div>
+<ul class="ticks"><li>Repairs and troubleshooting</li><li>Maintenance and clean-ups</li><li>Hardware and software upgrades</li><li>Most issues resolved within 1–3 business days</li></ul>
+</div></section>
+
+<section class="sec themed t-support" id="support"><img class="bgimg" src="assets/bg-support.webp" alt="" aria-hidden="true"><div class="veil"></div><div class="wrap split">
+<div><p class="eye">IT Support</p><h2>Reliable support for your team</h2>
+<p class="lead">From a slow laptop to a dropped connection, we keep your people working with structured, well-documented technical support.</p></div>
+<ul class="ticks"><li>Network and connectivity troubleshooting</li><li>End-user support, including Microsoft Office</li><li>System monitoring and health checks</li><li>VPN and firewall basics</li></ul>
+</div></section>
+
+<section class="sec alt" id="faq"><div class="wrap" style="max-width:760px">
+<p class="eye">FAQ</p><h2>Safe, reliable and unique</h2>
+<details open><summary>How long do repairs take?</summary><p>Repair times vary, but most issues are resolved within 1–3 business days.</p></details>
+<details><summary>Can I get design, a website and IT support from one company?</summary><p>Yes. That is why Sphola exists. One team handles your branding, your website and your technology.</p></details>
+<details><summary>How do I get a quote?</summary><p>Send us a message below, call or WhatsApp us, and we will come back to you.</p></details>
+</div></section>
+
+<section class="sec" id="founder"><div class="wrap fnd">
+<img class="photo" src="assets/photo.webp" alt="Vuyisani Fortune Sayo, founder of Sphola Digital Solutions">
+<div><p class="eye">The Founder</p>
+<blockquote>“Every device, design and website we deliver leaves our hands in excellent condition.”</blockquote>
+<p><strong>Vuyisani Fortune Sayo</strong> is the founder of Sphola Digital Solutions, a Cape Town company that brings creative design and smart technology together.</p>
+<p>Vuyisani has worked in IT support and network operations since 2022, supporting network connectivity, system monitoring, user troubleshooting and live-streaming operations. He completed Cisco Networking Academy training at the College of Cape Town, including IT Essentials and all three CCNA v7 courses, and holds a First Aid NQF Level 1 certificate.</p>
+<p>Since 2022 he has also run Creative Graphic Designs, delivering logos, flyers, social media content and professional websites for local businesses. Sphola was built so that businesses can deal with one dependable team for their branding, their website and their technology, instead of managing several suppliers.</p>
+<div class="creds"><span>4+ years in IT support &amp; network operations</span><span>Cisco Networking Academy: IT Essentials + CCNA v7</span><span>Design &amp; web development since 2022</span><span>First Aid NQF Level 1</span></div>
+</div></div></section>
+
+<section class="sec alt" id="contact"><div class="wrap split" style="align-items:start">
+<div><p class="eye">Contact</p><h2>Sign up today</h2>
+<p class="lead">We’re at your service. Tell us how we can help you.</p>
+<form id="f"><div class="two"><label>Name<input name="name" required autocomplete="name"></label><label>Email<input name="email" type="email" required autocomplete="email"></label></div>
+<label>Message<textarea id="msg" name="message" required></textarea></label><button class="btn" type="submit">Submit</button></form></div>
+<div class="ways"><a href="tel:+27682760271">Call us<small>068 276 0271</small></a><a href="https://wa.me/27682760271">WhatsApp<small>Message us directly</small></a><a href="mailto:vuyisanisayo69@gmail.com">Email<small>vuyisanisayo69@gmail.com</small></a></div>
+</div></section>
+
+<footer><img src="assets/logo.webp" alt="Sphola">
+<p><strong>Sphola Digital Solutions</strong> • Cape Town, South Africa</p>
+<p>CREATIVE DESIGN. SMART TECHNOLOGY.</p><p>© 2026 Sphola Digital Solutions. All rights reserved.</p></footer>
+<script>
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();var d=new FormData(e.target);location.href='mailto:vuyisanisayo69@gmail.com?subject='+encodeURIComponent('Enquiry from '+d.get('name'))+'&body='+encodeURIComponent(d.get('message')+'\n\n'+d.get('name')+'\n'+d.get('email'));});
+</script>
+<script>
+(function(){
+if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+var c=document.getElementById('net'),x=c.getContext('2d'),W,H,D=Math.min(window.devicePixelRatio||1,2),P=[],m={x:-999,y:-999,on:false},t,small=innerWidth<700,N=small?42:80,L=small?110:140,R=small?150:180;
+function size(){W=innerWidth;H=innerHeight;c.width=W*D;c.height=H*D;x.setTransform(D,0,0,D,0,0)}
+function init(){P=[];for(var i=0;i<N;i++)P.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35})}
+function set(px,py){m.x=px;m.y=py;m.on=true;clearTimeout(t);t=setTimeout(function(){m.on=false},1800)}
+addEventListener('mousemove',function(e){set(e.clientX,e.clientY)},{passive:true});
+addEventListener('touchstart',function(e){var q=e.touches[0];set(q.clientX,q.clientY)},{passive:true});
+addEventListener('touchmove',function(e){var q=e.touches[0];set(q.clientX,q.clientY)},{passive:true});
+document.addEventListener('mouseleave',function(){m.on=false});
+addEventListener('resize',function(){size();init()});
+function line(ax,ay,bx,by,col,a){x.strokeStyle='rgba('+col+','+a+')';x.beginPath();x.moveTo(ax,ay);x.lineTo(bx,by);x.stroke()}
+function step(){x.clearRect(0,0,W,H);x.lineWidth=.8;
+for(var i=0;i<P.length;i++){var a=P[i];a.x+=a.vx;a.y+=a.vy;if(a.x<0||a.x>W)a.vx*=-1;if(a.y<0||a.y>H)a.vy*=-1;
+if(m.on){var dx=m.x-a.x,dy=m.y-a.y,d=Math.hypot(dx,dy);if(d<R&&d>40){a.x+=dx/d*.7;a.y+=dy/d*.7}if(d<R)line(a.x,a.y,m.x,m.y,'255,159,28',.75*(1-d/R))}
+for(var j=i+1;j<P.length;j++){var b=P[j],e=Math.hypot(a.x-b.x,a.y-b.y);if(e<L)line(a.x,a.y,b.x,b.y,'242,106,27',.38*(1-e/L))}
+x.fillStyle='rgba(242,106,27,.8)';x.fillRect(a.x-1,a.y-1,2.4,2.4)}
+if(m.on){x.fillStyle='#FF9F1C';x.beginPath();x.arc(m.x,m.y,3.2,0,6.2832);x.fill()}
+requestAnimationFrame(step)}
+size();init();step();
+})();
+</script>
+<script>
+(function(){
+var msg=document.getElementById('msg'),tot=document.getElementById('tot'),rq=document.getElementById('rq'),items={},pkg=null;
+function go(){document.getElementById('contact').scrollIntoView({behavior:'smooth'});}
+function draft(){var t='Hi Sphola Digital Solutions,\n\n',k=Object.keys(items),s=0;
+if(pkg){t+='I would like to order the '+pkg.name+' package ('+pkg.price+').\nIt includes: '+pkg.inc+'.\n\n';}
+else if(k.length){t+='I would like a quote for the following designs:\n';k.forEach(function(n){t+='- '+n+' (R'+items[n]+')\n';s+=items[n];});t+='\nEstimated total: R'+s+'\n\n';}
+else{msg.value='';return;}
+msg.value=t+'Please let me know the next steps. Thank you.';}
+function sum(){var s=0;for(var n in items)s+=items[n];tot.textContent='R'+s;rq.disabled=!Object.keys(items).length;}
+document.querySelectorAll('.it').forEach(function(b){b.addEventListener('click',function(){
+pkg=null;document.querySelectorAll('.pkc').forEach(function(c){c.classList.remove('sel');});
+var n=b.dataset.n;if(items[n]){delete items[n];b.classList.remove('on');b.setAttribute('aria-pressed','false');}else{items[n]=+b.dataset.p;b.classList.add('on');b.setAttribute('aria-pressed','true');}
+sum();draft();});});
+document.querySelectorAll('.pb').forEach(function(b){b.addEventListener('click',function(){
+items={};document.querySelectorAll('.it').forEach(function(i){i.classList.remove('on');i.setAttribute('aria-pressed','false');});
+document.querySelectorAll('.pkc').forEach(function(c){c.classList.remove('sel');});b.closest('.pkc').classList.add('sel');
+pkg={name:b.dataset.name,price:b.dataset.price,inc:b.dataset.inc};sum();draft();go();});});
+rq.addEventListener('click',function(){draft();go();});
+})();
+</script>
+</body>
+</html>
