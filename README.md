@@ -10,3 +10,4 @@ Static site: `index.html` plus the `assets/` folder. No build step.
 
 ## Editing
 Open `index.html`. Text, services and contact details are plain HTML. Images live in `assets/`.
+Last updated: 21 October 2026
